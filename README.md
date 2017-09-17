@@ -22,8 +22,11 @@ _iMin_           - minimum index of seearching (0 as well)
 
 _ASC_ - ascending order
 
+<<<<<<< HEAD
 _DESC_ - descending order
 
+=======
+>>>>>>> dad66c1cd4fab0b0405f713f6c4e978dcf01f7a8
 ### SHOW AND FILLING FUNCTION
 
 **void Show(const T *pArr,const int SIZE,unsigned int iSymbolWidth,char cSpaceSymbol);**
