@@ -23,7 +23,6 @@ _iMin_           - minimum index of seearching (0 as well)
 _ASC_ - ascending order
 _DESC_ - descending order
 
-
 ### SHOW AND FILLING FUNCTION
 
 **void Show(const T *pArr,const int SIZE,unsigned int iSymbolWidth,char cSpaceSymbol);**
@@ -33,19 +32,19 @@ _DESC_ - descending order
 **void Random(T *pArr,const int SIZE, int iDivider);**
 
 >*function: pseudo-randow fill the input array*
- 
+
 ### SEARCH FUNCTIONS
 
 **int BinarySeacrch(T Key,T * pArr,unsigned int iMax,unsigned int iMin);**
 
 >*function: binary search algorithm on input array, return position of Key in the array*
-  
+
 ### SORTING FUNCTIONS
 
 **void BubbleSort (T *pArr,const int SIZE, bool (*pOrder)(T,T));**
 
 >*bubble sort algorithm*
-  
+
 **void BubbleSortOptimized (T *pArr,const int SIZE,bool (*pOrder)(T,T));**
 
 >*Optimized bubble sort algorithm*
