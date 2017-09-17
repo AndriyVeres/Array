@@ -122,7 +122,7 @@ void Random(float *pArr,const int SIZE, int iDivider)
 //----------------SEARCH FUNCTIONS-------------------//
 //function: binary search algorithm on input array, returns position of key in the array
 template <typename T>
-int BinarySeacrh(T Key,T * pArr,unsigned int iMax,unsigned int iMin)
+int BinarySeacrch(T Key,T * pArr,unsigned int iMax,unsigned int iMin)
 {
   unsigned int iMiddle = ( iMax + iMin ) / 2;
 
@@ -140,10 +140,10 @@ int BinarySeacrh(T Key,T * pArr,unsigned int iMax,unsigned int iMin)
     return iMiddle;
 
   else if(Key <= pArr[iMiddle])
-    return BinarySeacrh(Key,pArr,iMiddle,iMin);
+    return BinarySeacrch(Key,pArr,iMiddle,iMin);
 
   else if(Key >= pArr[iMiddle])
-    return BinarySeacrh(Key,pArr,iMax,iMiddle);
+    return BinarySeacrch(Key,pArr,iMax,iMiddle);
 
 }
 

@@ -35,7 +35,7 @@ _DESC_ - descending order
  
 ### SEARCH FUNCTIONS
 
-**int BinarySeacrh(T Key,T * pArr,unsigned int iMax,unsigned int iMin);**
+**int BinarySeacrch(T Key,T * pArr,unsigned int iMax,unsigned int iMin);**
 >*function: binary search algorithm on input array, return position of Key in the array*
   
 ### SORTING FUNCTIONS
