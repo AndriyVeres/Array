@@ -26,7 +26,6 @@ _DESC_ - descending order
 
 ### SHOW AND FILLING FUNCTION
 
-
 **void Show(const T *pArr,const int SIZE,unsigned int iSymbolWidth,char cSpaceSymbol);**
 
 >*function, that show input array*
