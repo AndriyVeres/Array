@@ -1,0 +1,89 @@
+<html><head><meta charset="utf-8"/><style>h1 { margin: 5px 0 20px 0; }h2, h3 { margin: 10px 0 15px 0; }img { max-width: 100%; }a { color: #FF9137; text-decoration: none; } pre, code { font-family: monospace; font-size: 9pt; }pre, code { padding: 16px; overflow: auto; line-height: 1.45em; background-color: #f1f1f1; border-radius: 3px; } body { font-family: "Noto Sans"; font-size: 9pt; } </style></head><body><h1 id="toc_0">Some usefull functions for working with arrays</h1>
+
+<h3 id="toc_1">namespace <u>Array</u></h3>
+
+<h3 id="toc_2">ABBREVIATIONS</h3>
+
+<p><u>pArr</u>   - pointer to array</p>
+
+<p><u>SIZE</u>   - array size</p>
+
+<p><u>iSymbolWidth</u>   - width of symbols in showing order for leveling for each array element</p>
+
+<p><u>cSpaceSymbol</u>  - symbol, that will be used as spacing symboll between two array elements</p>
+
+<p><u>iDivider</u>      - divider as used as upper threshold for pseudo-random numbers  generation</p>
+
+<p><u>Key</u>            - searching key</p>
+
+<p><u>iMax</u>           - maximum index of searching (size of array as well)</p>
+
+<p><u>iMin</u>           - minimum index of seearching (0 as well)</p>
+
+<p><u>ASC</u> - ascending order</p>
+
+<p><u>DESC</u> - descending order</p>
+
+<h3 id="toc_3">SHOW AND FILLING FUNCTION</h3>
+
+<p><strong>void Show(const T *pArr,const int SIZE,unsigned int iSymbolWidth,char cSpaceSymbol);</strong></p>
+
+<blockquote>
+<p><em>function, that show input array</em></p>
+</blockquote>
+
+<p><strong>void Random(T *pArr,const int SIZE, int iDivider);</strong></p>
+
+<blockquote>
+<p><em>function: pseudo-randow fill the input array</em></p>
+</blockquote>
+
+<h3 id="toc_4">SEARCH FUNCTIONS</h3>
+
+<p><strong>int BinarySeacrch(T Key,T * pArr,unsigned int iMax,unsigned int iMin);</strong></p>
+
+<blockquote>
+<p><em>function: binary search algorithm on input array, return position of Key in the array</em></p>
+</blockquote>
+
+<h3 id="toc_5">SORTING FUNCTIONS</h3>
+
+<p><strong>void BubbleSort (T <em>pArr,const int SIZE, bool (</em>pOrder)(T,T));</strong></p>
+
+<blockquote>
+<p><em>bubble sort algorithm</em></p>
+</blockquote>
+
+<p><strong>void BubbleSortOptimized (T <em>pArr,const int SIZE,bool (</em>pOrder)(T,T));</strong></p>
+
+<blockquote>
+<p><em>Optimized bubble sort algorithm</em></p>
+</blockquote>
+
+<p><strong>void SelectionSort(T * pArr,const unsigned int SIZE, bool (*pOrder)(T,T));</strong></p>
+
+<blockquote>
+<p><em>selection sort algorithm</em></p>
+</blockquote>
+
+<h3 id="toc_6">EXAMPLE</h3>
+
+<pre>#include &lt;iostream&gt;
+#include &quot;Array.hpp&quot;
+
+using namespace std;
+
+int main()
+{   
+    const int SIZE = 10;                             //size of array
+    int Arr[SIZE];                                   //creating array of int values
+
+    Array::Random(Arr,SIZE,5);                       //random array filling
+
+    Array::BubbleSortOptimized(Arr,SIZE,Array::ASC); //Optimized bubble sort in ascending order
+    Array::Show(Arr,SIZE,3,&#39; &#39;);                     //Array show
+
+    return 0;
+}
+</pre>
+</body></html>
