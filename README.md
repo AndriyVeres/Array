@@ -28,25 +28,31 @@ _DESC_ - descending order
 
 
 **void Show(const T *pArr,const int SIZE,unsigned int iSymbolWidth,char cSpaceSymbol);**
+
 >*function, that show input array*
 
 **void Random(T *pArr,const int SIZE, int iDivider);**
+
 >*function: pseudo-randow fill the input array*
  
 ### SEARCH FUNCTIONS
 
 **int BinarySeacrch(T Key,T * pArr,unsigned int iMax,unsigned int iMin);**
+
 >*function: binary search algorithm on input array, return position of Key in the array*
   
 ### SORTING FUNCTIONS
 
 **void BubbleSort (T *pArr,const int SIZE, bool (*pOrder)(T,T));**
+
 >*bubble sort algorithm*
   
 **void BubbleSortOptimized (T *pArr,const int SIZE,bool (*pOrder)(T,T));**
+
 >*Optimized bubble sort algorithm*
 
 **void SelectionSort(T * pArr,const unsigned int SIZE, bool (*pOrder)(T,T));**
+
 >*selection sort algorithm*
 
 ### EXAMPLE
